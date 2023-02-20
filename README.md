@@ -14,3 +14,8 @@
 ---
 
 - install `beautifulsoup4`, `requests`
+
+- 만약 크롤링을 점검하는 로직이 있을 때
+  - [user-agent-string](https://www.useragentstring.com/)
+  - `get(url, headers={"User-Agent": "Jay"})`
+  - [fake-useragent](https://pypi.org/project/fake-useragent/)
