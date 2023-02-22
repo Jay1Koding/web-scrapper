@@ -19,3 +19,19 @@
   - [user-agent-string](https://www.useragentstring.com/)
   - `get(url, headers={"User-Agent": "Jay"})`
   - [fake-useragent](https://pypi.org/project/fake-useragent/)
+
+---
+
+# Forbidden 403 Solution
+
+- 403 Forbidden으로 solution이 필요함
+  - [참고링크](https://goddino.tistory.com/353)
+  - [selenium](https://www.selenium.dev/)
+  - [webdriver-manager](https://pypi.org/project/webdriver-manager/)
+  - [chrome-driver](https://chromedriver.chromium.org/downloads)
+
+`pip3 install selenium #mac`
+`pip3 install webdriver_manager #mac`
+
+`pip install selenium #window`
+`pip install webdriver_manager #window`
