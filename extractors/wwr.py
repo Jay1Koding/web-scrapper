@@ -3,7 +3,7 @@ from requests import get
 
 
 def extract_wwr_jobs(keyword):
-
+    main_url = 'https://weworkremotely.com'
     base_url = 'https://weworkremotely.com/remote-jobs/search?term='
     search_term = 'python'
 
@@ -26,11 +26,11 @@ def extract_wwr_jobs(keyword):
                 company, time, region = anchor.find_all(
                     'span', class_='company')
                 job_data = {
-                    'link': f'https://weworkremotely.com{link}',
+                    'link': f'{main_url}{link}',
                     'title': title.string,
                     'company': company.string,
                     'time': time.string,
-                    'region': region.string,
+                    'location': region.string,
                 }
                 results.append(job_data)
         return results
